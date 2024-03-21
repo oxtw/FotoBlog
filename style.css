@@ -19,7 +19,7 @@
 
 body{
     font-size: 1.6rem;
-    background-color: var(--color-base-gray-900);
+    background-color: var(--color-base-white);
 }
 
 /*aplicando grid*/
@@ -36,6 +36,40 @@ body{
 }
 
 main{
-    background-color: aquamarine;
     overflow: scroll; /*adicionando rolagem somente ao conteúdo do main*/
+    background-color: var(--color-base-gray-100);
+}
+
+header,
+nav,
+nav ul{
+    display: flex; /*utilizando o flexbox */
+    align-items: center; /*alinhando os items no centro*/
+    gap: 7.2rem;
+    font-weight: 700;
+}
+
+header form{
+    flex: 1;
+}
+
+nav ul{
+    list-style:none; /*retirando as bolinhas da lista*/
+}
+
+ul li.active{
+    color: var(--color-base-gray-900);
+}
+
+.avatar{
+    width: 4.2rem;/*largura e altura */
+    height:4.2rem;/*largura e altura */
+    object-fit: cover;
+    border-radius: 50%; /*aredondando o icone*/
+}
+
+footer{
+    padding: 1.6rem;
+    text-align: center;
+    font-weight: 600;
 }

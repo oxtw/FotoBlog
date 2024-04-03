@@ -125,11 +125,26 @@ main h1{
 
     /*proporção da imagem*/
     aspect-ratio:16/9; /*1 largura img, 2 altura img*/
-    object-fit: cover; 
+    object-fit: cover;
+    
+    /* transition-property: transform, filter;
+    transition-duration: 300ms;
+    transition-delay: 0s;
+    transition-timing-function: ease-out; */
+
+    transition: all 200ms ease-out;
+}
+
+.item img:hover{
+    filter: hue-rotate(7deg) contrast(101%) saturate(200%);
+    transform:scale(1.1) rotate(-2deg);
 }
 
 .detail{
     padding: 2.2rem;
+    background-color: var(--color-base-white);
+    z-index: 1;
+    position: relative;
 }
 
 .detail h2{
